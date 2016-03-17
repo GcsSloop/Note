@@ -12,8 +12,7 @@
 
 ###  编译过程:
 
- <img src="http://yuml.me/diagram/nofunky/class/
- [源程序] 编译程序->[机器语言目标程序]" />
+ <img src="http://yuml.me/diagram/nofunky/class/[源程序] 编译程序->[机器语言目标程序]" />
 
 **如果程序最后生成的不是机器语言，而是汇编则增加一步：**
 

@@ -10,6 +10,33 @@
 翻译程序 | 从一种语言到另一种等价的语言
 编译程序 | 从高级语言到低级语言，编译是翻译的一种
 
+![Alt text](http://g.gravizo.com/g?
+  digraph G {
+    size ="4,4";
+    main [shape=box];
+    main -> parse [weight=8];
+    parse -> execute;
+    main -> init [style=dotted];
+    main -> cleanup;
+    execute -> { make_string; printf}
+    init -> make_string;
+    edge [color=red];
+    main -> printf [style=bold,label="100 times"];
+    make_string [label="make a string"];
+    node [shape=box,style=filled,color=".7 .3 1.0"];
+    execute -> compare;
+  }
+)
+
+![Alt text](http://g.gravizo.com/g?
+  digraph G {
+   源程序 [shape=box];
+   机器语言 [shape=box];
+   源程序 -> 机器语言 [label=“编译程序”];
+  }
+)
+
+
 ###  编译过程:
 
  <img src="http://yuml.me/diagram/nofunky/class/(源程序) 编译程序 -> (机器语言目标程序) " />

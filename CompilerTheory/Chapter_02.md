@@ -31,7 +31,6 @@
 集合的乘积     | 设A和B是符号串的集合，则A和B的乘积定义为<br/> **AB = { xy \| x ∈ A， y∈ B }**
 符号串的幂运算 | x<sup>0</sup> = ε <br/> x<sup>1</sup> = x <br/> x<sup>2</sup> = xx <br/> ... <br/> x<sup>n</sup> = x x<sup>n-1</sup>(n > 0)
 集合的幂运算   | A<sup>0</sup> = {ε} <br/> A<sup>1</sup> = A <br/> A<sup>2</sup> = AA <br/> ... <br/> A<sup>n</sup> = A A<sup>n-1</sup>(n > 0)
-
-
+集合A的<br/>正闭包A<sup>+</sup> <br/> 与闭包A<sup>\*</sup> | 设A是符号串的集合，则: <br/> A<sup>+</sup> = A<sup>1</sup> ∪ A<sup>2</sup> ∪ A<sup>3</sup> ∪...<br/> A<sup>\*</sup> = A<sup>0</sup> ∪ A<sup>1</sup> ∪ A<sup>2</sup> ∪... = {ε} ∪ A<sup>+</sup>
 
 

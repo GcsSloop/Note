@@ -4,7 +4,8 @@
 
  章节     | 简介
 :--------:|--------
-  第00章  | [UML简介](https://github.com/GcsSloop/Note/blob/master/UML/chapter_0.md)
+  第01章  | [UML简介](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_01.md)
+  第02章  | [面向对象分析与设计方法](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_02.md)
 
 
 ## About Me

@@ -4,7 +4,7 @@
 
 ## 2.1 OOA/OOD方法
 
-OOA/OOD(Object-Oriented- Analysisi/Object-Oriented Design)与传统分析设计方法相比具有如下优势：
+**OOA/OOD(Object-Oriented- Analysisi/Object-Oriented Design)与传统分析设计方法相比具有如下优势：**
 
 * 可以处理更有挑战性的问题领域。
 * 改善了分析人员与问题领域专家的交流。
@@ -13,3 +13,23 @@ OOA/OOD(Object-Oriented- Analysisi/Object-Oriented Design)与传统分析设计�
 * 可以建立有弹性的规范。
 * OOA(面向对象分析)、OOD(面向对象设计) 和 OOP(面向对象编程) 的结果可重用。
 * 为分析、设计、编程提供一致的基本表示。
+
+**OOA(面向对象分析)由5个重要步骤组成：**
+
+* 1.识别问题领域中的类和对象(Class & Objects)。
+* 2.确定结构(Structurs)。
+* 3.确定主题(Subjects)。
+* 4.定义属性(Attributes)。
+* 5.定义服务(Services)。
+
+上述步骤是没有时间顺序的。根据上述步骤，在分析阶段建立的OOA模型由5层组成。
+
+序号 | 名称       | 英文                 | 主要作用
+:---:|------------|----------------------|----------------------------------------
+  1  | 主题层     | Subject Layer        | 将系统分为模块，从而降低复杂性
+  2  | 类和对象层 | Class & Object Layer | 描述了系统中的类和对象
+  3  | 结构层     | Structure Layer      | 描述了类之间的继承关系和“整体-部分”的结构
+  4  | 属性层     | Attribute Layer      | 描述了属性以及类和对象之间的实例连接
+  5  | 服务层     | Service Layer        | 描述了方法以及类和对象之间的消息连接
+  
+  

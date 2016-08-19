@@ -26,7 +26,7 @@
 
 * [x] HTML
 * [x] CSS
-* [ ] JavaScript基础
+* [x] JavaScript基础
 * [ ] JS深入
 * [ ] JQuery
 * [ ] HTML5

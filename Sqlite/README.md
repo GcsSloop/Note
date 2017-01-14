@@ -1,12 +1,12 @@
-Ìí¼Ó£º
+æ·»åŠ ï¼š
 	insert into person (name, number) values ('zhangsan', '110')
 
-²éÑ¯£º
-	È«²¿ select * from person
-	¾ßÌå select * from person where name = 'zhangsan'
+æŸ¥è¯¢ï¼š
+	å…¨éƒ¨ select * from person
+	å…·ä½“ select * from person where name = 'zhangsan'
 
-ÐÞ¸Ä£º
+ä¿®æ”¹ï¼š
 	update person set number = '119'  where name = 'zhangsan'
-	alter table person add account varchar(20)	Îª±íÖÐÔö¼ÓÒ»ÁÐaccount
-É¾³ý£º
+	alter table person add account varchar(20)	ä¸ºè¡¨ä¸­å¢žåŠ ä¸€åˆ—account
+åˆ é™¤ï¼š
 	delete from person where name = 'zhangsan'

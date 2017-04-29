@@ -1,0 +1,16 @@
+task hello{
+	println "pre hello"
+	doLast {
+		println "Hello World!"
+	}
+		doLast {
+		println "Hello World! 2"
+	}
+	println "post hello"
+	doFirst{
+		println "frist hello"
+	}
+	doFirst{
+		println "frist hello2"
+	}
+}

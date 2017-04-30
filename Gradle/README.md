@@ -74,3 +74,27 @@ task hello {
 }
 ```
 
+## 第三章：构建脚本代码
+
+Gradle 脚本拥有 Groovy 所有的能力。
+
+```groovy
+task upper << {
+	String str = "My Name"
+	println "Original: " + str
+	println "upperCase：" + str.toUpperCase()
+}
+```
+
+```
+task count << {
+	5.times { print "$it "}
+
+	println ""
+	
+	3.times { i -> 
+		print i+" "
+	}
+}
+```
+

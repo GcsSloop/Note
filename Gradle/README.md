@@ -98,3 +98,47 @@ task count << {
 }
 ```
 
+## 第四章：任务依赖
+
+你可以声明任务之间的依赖关系。
+
+```groovy
+task hello << {
+	println "task hello"
+}
+
+task intro(dependsOn: hello) << {
+	println "I am Gradle!"
+}
+```
+
+输出内容：
+
+```
+> gradle -q intro
+Hello world!
+I'm Gradle
+```
+
+在执行 intro 任务时，会以执行 hello 作为前置条件。
+
+**在添加一个依赖之前，这个依赖任务不需要提前定义。**
+
+```groovy
+// 可以在任务定义之前添加依赖
+task taskA(dependsOn: 'taskB') << {
+	println "Task A"
+}
+
+task taskB << {
+	println "Task B"
+}
+```
+
+```
+> gradle -q taskA
+Task B
+Task A
+```
+
+这一点对于多任务构建非常重要。

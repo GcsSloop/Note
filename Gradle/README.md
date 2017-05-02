@@ -142,3 +142,27 @@ Task A
 ```
 
 这一点对于多任务构建非常重要。
+
+## 第五章：动态任务
+
+Gradle 不仅可以定义一个任务做什么，还可以动态创建任务。
+
+```groovy
+// 创建动态任务
+4.times { index ->
+	task "task$index" << {
+		println "I am task $index"
+	}
+}
+```
+
+```
+> gradle -q task1
+I am task 1
+> gradle -q task3
+I am task 3
+
+```
+
+## 第六章：使用已经存在的任务
+

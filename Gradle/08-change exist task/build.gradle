@@ -1,0 +1,17 @@
+// 访问任务，给任务添加行为
+
+task hello << {
+	println "Hello"
+}
+
+hello.doLast {
+	println "Do last"
+}
+
+hello.doFirst {
+	println "Do first"
+}
+
+hello << {
+	println "Fast do last"
+}

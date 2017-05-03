@@ -161,8 +161,58 @@ Gradle 不仅可以定义一个任务做什么，还可以动态创建任务。
 I am task 1
 > gradle -q task3
 I am task 3
-
 ```
 
 ## 第六章：使用已经存在的任务
 
+**任务创建后设置依赖关系。**
+
+```groovy
+// 创建动态任务
+
+4.times { index ->
+	task "task$index" << {
+		println "I am task $index"
+	}
+}
+
+task0.dependsOn task1, task3
+```
+
+```
+> gradle -q task0
+I am task 1
+I am task 3
+```
+
+**通过 API 访问任务，为任务添加行为。**
+
+```groovy
+// 访问任务，给任务添加行为
+
+task hello << {
+	println "Hello"
+}
+
+hello.doLast {
+	println "Do last"
+}
+
+hello.doFirst {
+	println "Do first"
+}
+
+hello << {
+	println "Fast do last"
+}
+```
+
+```
+> gradle -q hello
+Do first
+Hello
+Do last
+Fast do last
+```
+
+doFirst 和 doLast 可以执行多次，它们分别可以在 task 开始和结束时插入动作。`<<` 相当于 doLast 的简写。

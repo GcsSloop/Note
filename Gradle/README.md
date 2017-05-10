@@ -216,3 +216,32 @@ Fast do last
 ```
 
 doFirst 和 doLast 可以执行多次，它们分别可以在 task 开始和结束时插入动作。`<<` 相当于 doLast 的简写。
+
+## 第七章：短标记法
+
+使用短标记 `$` 可以访问一个存在的任务，也就是说每一个任务都可以作为构建脚本的属性。
+
+**当成构建脚本的属性来访问一个任务**
+
+```groovy
+// 使用短标记访问任务
+
+task hello << {
+	println "Hello"
+}
+
+hello.doLast {
+	println "Greetings from the $hello.name task."
+}
+```
+
+```
+> gradle -q hello
+Hello
+Greetings from the hello task.
+```
+
+这里的 name 是任务的默认属性，代表当前任务的名称。
+
+## 第八章：自定义任务属性
+

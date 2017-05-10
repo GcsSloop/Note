@@ -1,0 +1,9 @@
+// 使用短标记访问任务
+
+task hello << {
+	println "Hello"
+}
+
+hello.doLast {
+	println "Greetings from the $hello.name task."
+}

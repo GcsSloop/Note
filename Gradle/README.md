@@ -245,3 +245,22 @@ Greetings from the hello task.
 
 ## 第八章：自定义任务属性
 
+给任务添加自定义属性是没有限制的。
+
+```groovy
+// 给任务添加自定义属性
+
+task hello {
+	ext.value = "hahaha"
+}
+
+task printPropreties << {
+	println hello.value
+}
+```
+
+```
+> gradle -q printPropreties
+hahaha
+```
+

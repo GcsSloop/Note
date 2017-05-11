@@ -1,0 +1,9 @@
+// 给任务添加自定义属性
+
+task hello {
+	ext.value = "hahaha"
+}
+
+task printPropreties << {
+	println hello.value
+}

@@ -293,5 +293,48 @@ default clear projet
 default build project
 ```
 
+## 第十章：通过DAG构建
 
+Gradle有一个配置阶段和执行阶段，在配置阶段后，Gradle将会知道所有将要执行的任务，Gradle为你提供一个“钩子”，以便利用这些信息。
+
+举个例子，你可以根据执行的任务不同产生不同的输出。
+
+```groovy
+// 通过 DAG 配置
+
+task build << {
+	println "build apk with version=$version"
+}
+
+task debug(dependsOn:'build') << {
+	println "debug now"
+}
+
+task release(dependsOn:'build') << {
+	println "release now"
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+	if (taskGraph.hasTask(debug)) {
+		version = "1.0 - debug"
+	} else if (taskGraph.hasTask(release)) {
+		version = "1.0 - release"
+	} else {
+		version = "1.0 - default"
+	}
+}
+```
+
+```
+> gradle -q build
+build apk with version=1.0 - default
+> gradle -q debug
+build apk with version=1.0 - debug
+debug now
+> gradle -q release
+build apk with version=1.0 - release
+release now
+```
+
+whenReady 可以在任务执行之前就影响到任务。即便该任务不是首要任务。
 

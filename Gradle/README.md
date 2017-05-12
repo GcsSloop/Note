@@ -264,3 +264,34 @@ task printPropreties << {
 hahaha
 ```
 
+## 第九章：默认任务
+
+Gradle 允许在脚本中定义一个或者多个默认任务。
+
+```groovy
+// 定义默认任务
+
+defaultTasks 'clear', 'build'
+
+task clear << {
+	println "default clear projet"
+}
+
+task build << {
+	println "default build project"
+}
+
+
+task toher << {
+	println "I am not default"
+}
+```
+
+```
+> gradle -q
+default clear projet
+default build project
+```
+
+
+

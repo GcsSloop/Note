@@ -1,7 +1,0 @@
-// 创建动态任务
-
-4.times { index ->
-	task "task$index" << {
-		println "I am task $index"
-	}
-}

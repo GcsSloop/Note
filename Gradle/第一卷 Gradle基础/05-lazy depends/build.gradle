@@ -1,9 +1,0 @@
-// 可以在任务定义之前添加依赖
-
-task taskA(dependsOn: 'taskB') << {
-	println "Task A"
-}
-
-task taskB << {
-	println "Task B"
-}

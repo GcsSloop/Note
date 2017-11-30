@@ -1,24 +1,11 @@
-# Note
+# ExoPlayer website #
 
-杂记
+The [ExoPlayer website][https://google.github.io/ExoPlayer/] is hosted on
+GitHub Pages, and is statically generated using Jekyll.
 
-# 《编译原理》
-
-| 章节   | 链接                                       |
-| ---- | ---------------------------------------- |
-| 第01章 | [编译概述](https://github.com/GcsSloop/Note/blob/master/CompilerTheory/Chapter_01.md) |
-| 第02章 | [字母表和符号串的基本概念](https://github.com/GcsSloop/Note/blob/master/CompilerTheory/Chapter_02.md) |
-
-# UML
-
-|  章节  | 简介                                       |
-| :--: | ---------------------------------------- |
-| 第01章 | [UML简介](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_01.md) |
-| 第02章 | [面向对象分析与设计方法](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_02.md) |
-| 第03章 | [UML的关系](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_03.md) |
-| 第04章 | [UML的元素](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_04.md) |
-
-
-## About Me
-
-<a href="http://www.gcssloop.com/info/about" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" /> </a>
+* GitHub provides a guide describing how to up a GitHub Pages site using Jekyll
+  [here](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
+* GitHub provides a guide describing how to test changes to the site locally
+  [here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
+  Once your machine is setup, you can build and run a local instance of the
+  site using `./run_locally.sh` from the root directory.

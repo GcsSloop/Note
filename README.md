@@ -18,7 +18,16 @@
 | 第03章 | [UML的关系](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_03.md) |
 | 第04章 | [UML的元素](https://github.com/GcsSloop/Note/blob/master/UML/Chapter_04.md) |
 
+## 沧海拾遗
+
+- [知识链路](沧海拾遗/知识链路.md)
+- [细胞分裂编程法](沧海拾遗/细胞分裂编程法.md)
+- [我们为什么要用设计模式](沧海拾遗/我们为什么要用设计模式.md)
+- [内网穿透策略](沧海拾遗/内网穿透策略.md)
+- [解决bug技巧](沧海拾遗/解决bug技巧.md)
+- [脚手架与观察窗](沧海拾遗/脚手架与观察窗.md)
+- [SmartConfig原理](沧海拾遗/SmartConfig原理.md)
 
 ## About Me
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" /> </a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"> <img src="http://gcsblog.oss-cn-shanghai.aliyuncs.com/blog/gcs_banner.jpg?gcssloop" width="300" /> </a>

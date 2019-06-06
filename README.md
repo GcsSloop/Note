@@ -27,6 +27,7 @@
 - [解决bug技巧](沧海拾遗/解决bug技巧.md)
 - [脚手架与观察窗](沧海拾遗/脚手架与观察窗.md)
 - [SmartConfig原理](沧海拾遗/SmartConfig原理.md)
+- [追根溯源](沧海拾遗/追根溯源.md)
 
 ## About Me
 

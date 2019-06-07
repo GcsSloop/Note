@@ -29,6 +29,11 @@
 - [SmartConfig原理](沧海拾遗/SmartConfig原理.md)
 - [追根溯源](沧海拾遗/追根溯源.md)
 
+
+
+- [KodExplore](沧海拾遗/KodExplore.md)
+- [宝塔面板](沧海拾遗/宝塔面板.md)
+
 ## About Me
 
 <a href="http://www.gcssloop.com/info/about" target="_blank"> <img src="http://gcsblog.oss-cn-shanghai.aliyuncs.com/blog/gcs_banner.jpg?gcssloop" width="300" /> </a>

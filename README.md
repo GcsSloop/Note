@@ -29,6 +29,7 @@
 - [SmartConfig原理](沧海拾遗/SmartConfig原理.md)
 - [追根溯源](沧海拾遗/追根溯源.md)
 - [绕开电信80封锁](沧海拾遗/绕开电信80封锁.md)
+- [Shell控制GPIO](沧海拾遗/Shell控制GPIO.md)
 
 ### 工具推荐
 

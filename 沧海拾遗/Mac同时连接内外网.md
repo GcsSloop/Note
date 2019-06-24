@@ -12,5 +12,17 @@
 
 ### 2. 查看路由表
 
+```shell
+# 运行之后你就能看到路由表信息了
+$ netstat -rt
 
+Routing tables
+
+Internet:
+Destination        Gateway            Flags        Refs      Use   Netif Expire
+default            192.168.3.1        UGSc          262        0     en0       
+127                localhost          UCS             0     7173     lo0     
+```
+
+注意网关地址 Gateway，如果连接有多个网络，通常情况下，它们的网关地址是不应该相同的，否则可能引起冲突，导致网络无法访问。
 
